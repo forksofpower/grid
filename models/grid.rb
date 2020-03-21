@@ -1,6 +1,3 @@
-require 'date'
-# Grid can't do much
-
 class Grid
   attr_reader :height, :width
 
