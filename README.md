@@ -1,3 +1,4 @@
+![The grid](https://pixabay.com/get/57e5d14b4854ac14f1dc8460825668204022dfe05b55794b772879d7/retro-1548260_640.png)
 # Grid
 
 ### Why?
@@ -11,7 +12,7 @@ grid = Grid.new(height: 100, width: 100)
 # provide a tile id
 id = "tl-45-65"
 grid.find_by_tile_id(id)
-# => => #<Tile... @down=:"tl-45-66", @left=:"tl-44-67", @right=:"tl-46-67", @up=:"tl-45-68", @x=45, @y=67>
+# => #<Tile... @down=:"tl-45-66", @left=:"tl-44-67", @right=:"tl-46-67", @up=:"tl-45-68", @x=45, @y=67>
 ```
 ### Todo
 1. Finalize relationships
