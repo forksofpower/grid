@@ -17,9 +17,15 @@ require_relative '../config/environment.rb'
 
 # grid = nil
 # report = MemoryProfiler.report do
-    puts "Generating Grid @ " + DateTime.now.to_s
-    grid = Grid.new(height: 100, width: 100)
-    # p "Finding Tile: tl-88-89 @ " + Grid.find_tile_by_id("tl-88-89").u
+puts "Generating Grid @ " + DateTime.now.to_s
+grid = Grid.new(height: 100, width: 100)
+
+tile_a = grid.tile("tl-89-99")
+tile_b = grid.tile("tl-45-66")
+
+distance = grid.linear_distance(tile_a, tile_b)
+
+# p "Finding Tile: tl-88-89 @ " + Grid.find_tile_by_id("tl-88-89").u
 # puts grid.tiles
 # end
 # report.pretty_print

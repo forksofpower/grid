@@ -55,6 +55,10 @@ class Tile
         tile
     end
 
+    def self.find_tile_by_coordinates(x, y)
+        @@all[self.coordinates_to_tile_id(x, y)]
+    end
+
     # # # # # # # # # # # # # # # # # # # # # # # # # 
     private
     def self.string_to_coordinates(tile_string)

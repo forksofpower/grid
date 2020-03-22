@@ -23,14 +23,17 @@ class Grid
     end
   end
 
-  def find_tile_by_id(id)
+  def tile(id)
     Tile.all[id.to_sym]
+  end
+
+  def tile_by_coordinates(x, y)
+    Tile.find_tile_by_coordinates(x, y)
   end
 
   def tiles
     Tile.all
   end
-end
 
   # calculate the distance between two tiles
   def linear_distance(tile_a, tile_b)
